@@ -11,17 +11,6 @@
   },
   {
     "id": 2,
-    "category": "quality",
-    "description": "Testing the server",
-    "steps": [
-      "create a unit.test.ts file under test directory",
-      "ensure server instance from id 1 can exported",
-      "import server instance into test file and perform a test"
-    ],
-    "passes": false
-  },
-  {
-    "id": 3,
     "category": "functional",
     "description": "GET /inventory",
     "steps": [
@@ -31,7 +20,7 @@
     "passes": false
   },
   {
-    "id": 4,
+    "id": 3,
     "category": "functional",
     "description": "POST /reserve",
     "steps": [
@@ -41,7 +30,7 @@
     "passes": false
   },
   {
-    "id": 5,
+    "id": 4,
     "category": "functional",
     "description": "POST /release",
     "steps": [

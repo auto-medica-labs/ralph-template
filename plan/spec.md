@@ -28,7 +28,7 @@ export type ERPInventoryResponse = {
 
 ```json
 {
-  "reservedId": "<uuid>",
+  "reserveId": "<uuid>",
   "items": [
     {
       "sku": "<sku>",
@@ -42,7 +42,7 @@ export type ERPInventoryResponse = {
 }
 ```
 
-3. POST `/enroute`: will return nothing but http status 200 (good) and 400 (bad) which can configured in the code with boolean, this endpoint will accept request body like
+3. POST `/release`: will return nothing but http status 200 (good) and 400 (bad) which can configured in the code with boolean, this endpoint will accept request body like
 
 ```json
 {

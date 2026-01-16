@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "ralph:once": ". plan/ralph-once.sh"
+    "ralph:once": ". plan/ralph-once.sh",
+    "ralph:yolo": ". plan/ralph-yolo.sh 10"
   },
   "devDependencies": {
     "@types/bun": "latest"

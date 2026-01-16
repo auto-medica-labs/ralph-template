@@ -11,6 +11,17 @@
   },
   {
     "id": 2,
+    "category": "quality",
+    "description": "Testing the server",
+    "steps": [
+      "create a unit.test.ts file under test directory",
+      "ensure server instance from id 1 can exported",
+      "import server instance into test file and perform a test"
+    ],
+    "passes": false
+  },
+  {
+    "id": 3,
     "category": "functional",
     "description": "GET /inventory",
     "steps": [
@@ -20,7 +31,7 @@
     "passes": false
   },
   {
-    "id": 3,
+    "id": 4,
     "category": "functional",
     "description": "POST /reserve",
     "steps": [
@@ -30,12 +41,12 @@
     "passes": false
   },
   {
-    "id": 4,
+    "id": 5,
     "category": "functional",
-    "description": "POST /enroute",
+    "description": "POST /release",
     "steps": [
-      "caller call this to enroute the reserved inventory in json",
-      "you delete the record in json file from task id 3 that match this request"
+      "caller call this to release the reserved inventory",
+      "you delete the record in json file from task id 3 that reserveId matched this request"
     ],
     "passes": false
   }

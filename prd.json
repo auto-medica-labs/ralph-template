@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "category": "functional",
+    "description": "Base endpoint / (home)",
+    "steps": [
+      "Simple base GET endpoint for home",
+      "Server running at port 8080"
+    ],
+    "passes": false
+  },
+  {
+    "id": 2,
+    "category": "functional",
+    "description": "GET /inventory",
+    "steps": [
+      "return predifined object to caller",
+      "object is stored as a json file and can be added manually by user later"
+    ],
+    "passes": false
+  },
+  {
+    "id": 3,
+    "category": "functional",
+    "description": "POST /reserve",
+    "steps": [
+      "caller call this to reserve inventory",
+      "you save the caller request in a json"
+    ],
+    "passes": false
+  },
+  {
+    "id": 4,
+    "category": "functional",
+    "description": "POST /enroute",
+    "steps": [
+      "caller call this to enroute the reserved inventory in json",
+      "you delete the record in json file from task id 3 that match this request"
+    ],
+    "passes": false
+  }
+]

@@ -16,7 +16,7 @@ git restore .
 for ((i=1; i<=$1; i++)); do
   echo ""
   echo "=================================================="
-  echo "🚀 Starting Iteration $i of $1"
+  echo "🚀 Ralp start working, iteration $i of $1"
   echo "=================================================="
   echo ""
 
@@ -41,7 +41,11 @@ for ((i=1; i<=$1; i++)); do
   echo "$result"
 
   if [[ "$result" == *"<promise>COMPLETE</promise>"* ]]; then
-    echo "PRD complete, exiting."
+    echo ""
+    echo "=================================================="
+    echo "✅ Ralp completed all job, Ralp exiting."
+    echo "=================================================="
+    echo ""
     exit 0
   fi
 done

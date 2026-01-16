@@ -1,20 +1,9 @@
 #!/bin/bash
 
-# ralph.sh
-# Usage: ./ralph.sh <iterations>
-
 set -e
 
-if [ -z "$1" ]; then
-  echo "Usage: $0 <iterations>"
-  exit 1
-fi
-
-# For each iteration, run Claude Code with the following prompt.
-# This prompt is basic, we'll expand it later.
-for ((i=1; i<=$1; i++)); do
-  result=$(opencode --prompt \
-"@spec.md \
+opencode --prompt \
+"Reading the specification from @spec.md and current progress from @progress.txt then \
 1. Decide which task to work on next in @prd.json file. \
 This should be the one YOU decide has the highest priority, \
 - not necessarily the first in the list. \
@@ -24,12 +13,4 @@ This should be the one YOU decide has the highest priority, \
 ONLY WORK ON A SINGLE FEATURE. \
 If, while implementing the feature, you notice that all work \
 is complete, output <promise>COMPLETE</promise>. \
-" --model openrouter/z-ai/glm-4.7)
-
-  echo "$result"
-
-  if [[ "$result" == *"<promise>COMPLETE</promise>"* ]]; then
-    echo "PRD complete, exiting."
-    exit 0
-  fi
-done
+" --model openrouter/z-ai/glm-4.7

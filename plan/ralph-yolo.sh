@@ -10,6 +10,9 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
+git clean -fd
+git restore .
+
 for ((i=1; i<=$1; i++)); do
   result=$(opencode run --model openrouter/z-ai/glm-4.7 \
   "Reading the specification from @plan/spec.md and current progress from @plan/progress.txt then \

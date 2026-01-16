@@ -16,6 +16,6 @@ ONLY WORK ON A SINGLE FEATURE At A TIME. \
 After you finished each task in @plan/prd.json, exit and let other agent continue. \
 If, while implementing the feature, you notice that **ALL** work items \
 is complete, output <promise>COMPLETE</promise>. \
-Let me repeat that again, only output <promise>COMPLETE</promise> \
-when **ALL** work items in @plan/prd.json is completed, otherwise just exit with out output anything. \
-Always kill all any background process if you start any before you exit the session." --model nvidia/qwen/qwen3-coder-480b-a35b-instruct
+Let me repeat that again: only output <promise>COMPLETE</promise> when **ALL** work items \
+in @plan/prd.json are completed; otherwise, just exit without outputting anything. \
+Always kill all background processes that you start before exiting the session." --model nvidia/qwen/qwen3-coder-480b-a35b-instruct

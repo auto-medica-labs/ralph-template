@@ -11,7 +11,7 @@ if [ -z "$1" ]; then
 fi
 
 for ((i=1; i<=$1; i++)); do
-  result=$(opencode --prompt \
+  result=$(opencode run --model openrouter/z-ai/glm-4.7 \
   "Reading the specification from @plan/spec.md and current progress from @plan/progress.txt then \
   1. Decide which task to work on next in @plan/prd.json file. \
   This should be the one YOU decide has the highest priority, \
@@ -23,8 +23,7 @@ for ((i=1; i<=$1; i++)); do
   ONLY WORK ON A SINGLE FEATURE At A TIME. \
   After you finished each task in @plan/prd.json, exit and let other agent continue. \
   If, while implementing the feature, you notice that all work \
-  is complete, output <promise>COMPLETE</promise>. \
-  " --model openrouter/z-ai/glm-4.7)
+  is complete, output <promise>COMPLETE</promise>.")
 
   echo "$result"
 

@@ -17,4 +17,5 @@ After you finished each task in @plan/prd.json, exit and let other agent continu
 If, while implementing the feature, you notice that **ALL** work items \
 is complete, output <promise>COMPLETE</promise>. \
 Let me repeat that again, only output <promise>COMPLETE</promise> \
-when **ALL** work items in @plan/prd.json is completed, otherwise just exit with out output anything." --model openrouter/z-ai/glm-4.7
+when **ALL** work items in @plan/prd.json is completed, otherwise just exit with out output anything. \
+Always kill all any background process if you start any before you exit the session." --model nvidia/qwen/qwen3-coder-480b-a35b-instruct

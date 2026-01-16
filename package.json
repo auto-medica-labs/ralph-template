@@ -1,15 +1,15 @@
 {
-    "name": "mock",
-    "module": "index.ts",
-    "type": "module",
-    "private": true,
-    "script": {
-        "ralph:once": "./plan/ralph.sh"
-    },
-    "devDependencies": {
-        "@types/bun": "latest"
-    },
-    "peerDependencies": {
-        "typescript": "^5"
-    }
+  "name": "mock",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "ralph:once": ". plan/ralph-once.sh"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
 }

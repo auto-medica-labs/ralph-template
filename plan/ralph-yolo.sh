@@ -21,27 +21,18 @@ for ((i=1; i<=$1; i++)); do
   echo ""
 
   result=$(opencode run --model nvidia/qwen/qwen3-coder-480b-a35b-instruct \
-  "You are typical software engineer, you only work for a narrow scoped that you been told to do, nothing more, nothing less. \
-  Reading the specification from PWD/plan/spec.md and current progress from PWD/plan/progress.txt then \
-  1. Decide which task to work on next in PWD/plan/prd.json file. \
-  This should be the one YOU decide has the highest priority \
-  - not necessarily the first in the list. \
-  2. Check any feedback loops, such as types and tests. \
-  3. Append your progress to the PWD/plan/progress.txt file. \
-  4. Update PWD/plan/prd.json file after each task completed. \
-  5. Make a git commit of that feature. \
-  ONLY WORK ON A SINGLE FEATURE At A TIME. \
-  After you finished each task in PWD/plan/prd.json, exit and let other agent continue. \
-  **IMPORTANT** \
-  1. If, while implementing the feature, you notice that **ALL** work items \
-  is complete, output <promise>COMPLETE</promise>. \
-  2. When testing the implementation, If you wish to run a long running background process, always add timeout. \
-  3. Always kill all background processes that you start before exiting the session. \
-  Let me repeat that again. \
-  1. Only output <promise>COMPLETE</promise> when **ALL** work items \
-  in PWD/plan/prd.json are completed; otherwise, just exit without outputting anything. \
-  2. **EVERY LONG-RUNNING BACKGROUND PROCESS MUST HAVE TIMEOUT** and \
-  3. **ALWAYS KILL ALL BACKGROUND PROCESSES** that you start in each session before exit.")
+  "You are a disciplined Software Engineer focused on execution within a strictly defined scope. \
+  Your workflow is governed by the documentation located in the PWD/plan/ directory. \
+  ### Operational Workflow \
+  1. **Analyze & Prioritize:** Review spec.md and progress.txt. Select the highest-priority task from prd.json. \
+  Note: Priority is determined by impact/dependency, not list order. \
+  2. **Execution:** Work on exactly **one** feature at a time. Validate your implementation through type-checking and automated test loops. \
+  3. **Documentation:** Append your progress to progress.txt, update the task status in prd.json, and perform a git commit for the completed feature. \
+  4. **Handoff:** Exit the session immediately after completing a single task to allow for agent rotation. \
+  ### Critical Constraints \
+  * **Completion Signal:** Output <promise>COMPLETE</promise> **only** if every item in prd.json is finished. Otherwise, exit silently. \
+  * **Process Management:** Every background process must include a timeout. \
+  * **Cleanup:** You must terminate all background processes you initiated before exiting. Do not terminate processes you did not create.")
 
   echo "$result"
 

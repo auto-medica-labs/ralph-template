@@ -13,4 +13,4 @@ Note: Priority is determined by impact/dependency, not list order. \
 ### Critical Constraints \
 * **Completion Signal:** Output <promise>COMPLETE</promise> **only** if every item in prd.json is finished. Otherwise, exit silently. \
 * **Process Management:** Every background process must include a timeout. \
-* **Cleanup:** You must terminate all background processes you initiated before exiting. Do not terminate processes you did not create." --model openrouter/z-ai/glm-4.7
+* **Cleanup:** You must terminate all background processes you initiated before exiting. Do not terminate processes you did not create." --model zai-coding-plan/glm-4.7

@@ -20,7 +20,7 @@ for ((i=1; i<=$1; i++)); do
   echo "=================================================="
   echo ""
 
-  result=$(opencode run --model nvidia/qwen/qwen3-coder-480b-a35b-instruct \
+  result=$(opencode run --model zai-coding-plan/glm-4.7 \
   "You are a disciplined Software Engineer focused on execution within a strictly defined scope. \
   Your workflow is governed by the documentation located in the PWD/plan/ directory. \
   ### Operational Workflow \

@@ -3,7 +3,7 @@
 # Get optional custom name argument
 CUSTOM_NAME="$1"
 # Generate date with C locale to ensure YYYY-MM-DD format
-DATE=$(LC_TIME=C date +%Y-%m-%d)
+DATE=$(LC_TIME=C date +%Y%m%d%H%M)
 # Create folder name with optional custom name suffix
 if [ -n "$CUSTOM_NAME" ]; then
   FOLDER_NAME="${DATE}-${CUSTOM_NAME}"

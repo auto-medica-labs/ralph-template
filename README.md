@@ -54,7 +54,7 @@ The agent will:
 After all items in `prd.json` are marked complete:
 
 ```bash
-bun run ralph:archive -- <optional-name>
+bun run ralph:archive <optional-name>
 ```
 
 This will:

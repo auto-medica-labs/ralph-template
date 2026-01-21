@@ -4,7 +4,7 @@ This repository demonstrates an automatic Ralph workflow for autonomous software
 
 ## Quick Setup in Your Project
 
-To add the Ralph to any project:
+To add Ralph to any project:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/dheerapat/ralph-erp-demo/refs/heads/main/install-ralph.sh | bash

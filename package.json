@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "ralph:once": ". plan/ralph-once.sh",
-    "ralph:yolo": ". plan/ralph-yolo.sh 10"
+    "ralph:yolo": ". plan/ralph-yolo.sh 10",
+    "ralph:archive": ". plan/archive.sh"
   },
   "devDependencies": {
     "@types/bun": "latest"

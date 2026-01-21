@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "category": "setup",
+    "description": "Project initialization",
+    "steps": [
+      "Initialize project structure",
+      "Set up configuration files",
+      "Install dependencies"
+    ],
+    "passes": false
+  },
+  {
+    "id": 2,
+    "category": "functional",
+    "description": "Core feature implementation",
+    "steps": [
+      "Implement the main functionality",
+      "Add error handling",
+      "Write tests"
+    ],
+    "passes": false
+  },
+  {
+    "id": 3,
+    "category": "functional",
+    "description": "Additional feature",
+    "steps": [
+      "Step 1: Do something",
+      "Step 2: Do something else",
+      "Step 3: Verify the implementation"
+    ],
+    "passes": false
+  },
+  {
+    "id": 4,
+    "category": "testing",
+    "description": "Test coverage",
+    "steps": [
+      "Write unit tests",
+      "Write integration tests",
+      "Ensure all tests pass"
+    ],
+    "passes": false
+  }
+]

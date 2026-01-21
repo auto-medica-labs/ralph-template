@@ -1,10 +1,10 @@
-# Automatic Agent Workflow Demo
+# Ralph Wiggum Agentic Workflow Demo
 
-This repository demonstrates an automatic agent workflow for autonomous software development tasks using the `opencode` CLI tool.
+This repository demonstrates an automatic Ralph workflow for autonomous software development tasks using the `opencode` CLI tool.
 
 ## Quick Setup in Your Project
 
-To add the Ralph Plan System to any project:
+To add the Ralph to any project:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/dheerapat/ralph-erp-demo/refs/heads/main/install-ralph.sh | bash
@@ -41,7 +41,7 @@ Edit the following files in the `plan/` directory:
   - `passes`: Boolean (start with `false`, agent will update to `true` when done)
 - **`plan/progress.txt`** - Keep initial state (the agent will update this as it works)
 
-### Step 2: Run the Agent
+### Step 2: Run the Ralph Agent
 
 Choose one of the following modes:
 
@@ -56,7 +56,7 @@ bun run ralph:yolo <iterations>
 ```
 Replace `<iterations>` with the maximum number of iterations (e.g., `bun run ralph:yolo 10`)
 
-The agent will:
+Ralph will:
 1. Analyze `spec.md` and `progress.txt`
 2. Select the highest-priority task from `prd.json`
 3. Implement one feature at a time

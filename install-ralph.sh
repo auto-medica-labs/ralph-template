@@ -297,6 +297,6 @@ else
   echo "Warning: package.json not found in current directory"
 fi
 
-echo "✅ Ralph Plan System installed successfully!"
+echo "✅ Ralph Wiggum loop installed successfully!"
 echo "📝 Edit plan/spec.md, plan/prd.json, and plan/progress.txt to define your project"
-echo "🚀 Run 'npm run ralph:once' to execute one task, or 'npm run ralph:yolo' for multiple iterations"
+echo "🚀 Run 'bun run ralph:once' to execute one task, or 'bun run ralph:yolo' for multiple iterations"

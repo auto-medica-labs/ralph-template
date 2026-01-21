@@ -2,6 +2,22 @@
 
 This repository demonstrates an automatic agent workflow for autonomous software development tasks using the `opencode` CLI tool.
 
+## Quick Setup in Your Project
+
+To add the Ralph Plan System to any project:
+
+```bash
+curl -sL <install-script-url> | bash
+```
+
+This will:
+- Create the `/plan/` directory structure with all necessary files
+- Add npm scripts (`ralph:once`, `ralph:yolo`, `ralph:archive`) to your `package.json`
+- Set up template files for specifications, PRD, and progress tracking
+
+**Requirements:**
+- `jq` must be installed (the install script will check and provide installation instructions if missing)
+
 ## How to Use This Workflow
 
 ### Step 1: Prepare Your Task Definition

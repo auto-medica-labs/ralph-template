@@ -10,6 +10,12 @@ if [ -n "$CUSTOM_NAME" ]; then
 else
   FOLDER_NAME="${DATE}"
 fi
+# Check if all 3 files exist
+if [ ! -f "plan/spec.md" ] || [ ! -f "plan/prd.json" ] || [ ! -f "plan/progress.txt" ]; then
+  echo "Error: Not all files found. All 3 files (spec.md, prd.json, progress.txt) must exist to archive."
+  exit 1
+fi
+
 # Create target directory
 TARGET_DIR="plan/archived/${FOLDER_NAME}"
 mkdir -p "$TARGET_DIR"

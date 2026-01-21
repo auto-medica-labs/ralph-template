@@ -7,7 +7,7 @@ This repository demonstrates an automatic agent workflow for autonomous software
 To add the Ralph Plan System to any project:
 
 ```bash
-curl -sL <install-script-url> | bash
+curl -sSL https://raw.githubusercontent.com/dheerapat/ralph-erp-demo/refs/heads/main/install-ralph.sh | bash
 ```
 
 This will:

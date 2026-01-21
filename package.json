@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "ralph:once": ". plan/ralph-once.sh",
-    "ralph:yolo": ". plan/ralph-yolo.sh 10",
-    "ralph:archive": ". plan/archive.sh"
+    "ralph:once": ". plan/script/ralph-once.sh",
+    "ralph:yolo": ". plan/script/ralph-yolo.sh 10",
+    "ralph:archive": ". plan/script/archive.sh"
   },
   "devDependencies": {
     "@types/bun": "latest"

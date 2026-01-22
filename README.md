@@ -4,20 +4,43 @@
 
 This repository demonstrates an automatic Ralph workflow for autonomous software development tasks using the `opencode` CLI tool.
 
-## Quick Setup in Your Project
+## Want to Try Ralph Right Away?
 
-To add Ralph to any project:
+Make sure you have these tools installed:
+
+1. Bun
+2. OpenCode CLI
+
+Clone this repository and follow these step:
+
+```bash
+bun install
+
+bun run ralph:once
+# or
+bun run ralph:yolo 10
+```
+
+That's it! You can see Ralph working right away! I already have sample `spec.md`, `prd.json` and `progrss.txt` to build a sample application for you in `/plan` so you can easily test for your self, if you want Ralph to work for your own project just change those 3 files.
+
+For more detail, just continue reading.
+
+## Want to Add Ralph in Your Project?
+
+To add Ralph to any bun/node.js project:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/auto-medica-labs/ralph-template/refs/heads/main/install-ralph.sh | bash
 ```
 
 This will:
+
 - Create the `/plan/` directory structure with all necessary files
 - Add npm scripts (`ralph:once`, `ralph:yolo`, `ralph:archive`) to your `package.json`
 - Set up template files for specifications, PRD, and progress tracking
 
 **Requirements:**
+
 - `jq` must be installed (the install script will check and provide installation instructions if missing)
 
 ## How to Use This Workflow
@@ -48,17 +71,21 @@ Edit the following files in the `plan/` directory:
 Choose one of the following modes:
 
 **Single Task Execution:**
+
 ```bash
 bun run ralph:once
 ```
 
 **Fully Autonomous Mode** (executes multiple iterations until all tasks complete):
+
 ```bash
 bun run ralph:yolo <iterations>
 ```
+
 Replace `<iterations>` with the maximum number of iterations (e.g., `bun run ralph:yolo 10`)
 
 Ralph will:
+
 1. Analyze `spec.md` and `progress.txt`
 2. Select the highest-priority task from `prd.json`
 3. Implement one feature at a time
@@ -76,30 +103,7 @@ bun run ralph:archive <optional-name>
 ```
 
 This will:
+
 - Create a timestamped folder in `plan/archived/`
 - Move `spec.md`, `prd.json`, and `progress.txt` to the archive
 - Allow you to start fresh with a new task
-
-## Example: Mock ERP Server
-
-The current `plan/` files contain an example task to build a mock ERP HTTP server for inventory management with:
-- Base endpoint `/`
-- GET `/inventory` endpoint
-- POST `/reserve` endpoint
-- POST `/release` endpoint
-
-**Templates Available:**
-- `plan/templates/spec.template.md` - Template for writing specifications
-- `plan/templates/prd.template.json` - Template for defining tasks
-- `plan/templates/progress.template.txt` - Template for tracking progress
-
-## Requirements
-
-- Bun runtime
-- `opencode` CLI tool with access to the `zai-coding-plan/glm-4.7` model
-
-## Install Dependencies
-
-```bash
-bun install
-```

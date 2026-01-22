@@ -8,8 +8,8 @@ This repository demonstrates an automatic Ralph workflow for autonomous software
 
 Make sure you have these tools installed:
 
-1. Bun
-2. OpenCode CLI
+1. [Bun](https://bun.sh/)
+2. [OpenCode CLI](https://opencode.ai/)
 
 Clone this repository and follow these step:
 
@@ -21,9 +21,7 @@ bun run ralph:once
 bun run ralph:yolo 10
 ```
 
-That's it! You can see Ralph working right away! I already have sample `spec.md`, `prd.json` and `progrss.txt` to build a sample application for you in `/plan` so you can easily test for your self, if you want Ralph to work for your own project just change those 3 files.
-
-For more detail, just continue reading.
+Ralph is now running! I have included sample configuration files (`spec.md`, `prd.json`, and `progrss.txt`) in the `/plan` directory so you can test the workflow immediately. To adapt Ralph for your own project, simply modify these three files. Read on for further details.
 
 ## Want to Add Ralph in Your Project?
 

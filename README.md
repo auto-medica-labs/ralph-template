@@ -9,7 +9,7 @@ This repository demonstrates an automatic Ralph workflow for autonomous software
 To add Ralph to any project:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/dheerapat/ralph-template/refs/heads/main/install-ralph.sh | bash
+curl -sSL https://raw.githubusercontent.com/auto-medica-labs/ralph-template/refs/heads/main/install-ralph.sh | bash
 ```
 
 This will:

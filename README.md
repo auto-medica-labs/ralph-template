@@ -1,4 +1,6 @@
-# Ralph: A template for end-to-end software development powering entirely by agentic coding
+# Ralph: A template for end-to-end software development cycle powering entirely by OpenCode
+
+> This repository is intentionally designed with `opencode` as its core, though the underlying framework is flexible enough to work with any command-line AI agent tool of your choice, such as `mistral-vibe`, `gemini-cli`, `copilot-cli`, and others.
 
 This repository demonstrates an automatic Ralph workflow for autonomous software development tasks using the `opencode` CLI tool.
 
@@ -7,7 +9,7 @@ This repository demonstrates an automatic Ralph workflow for autonomous software
 To add Ralph to any project:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/dheerapat/ralph-erp-demo/refs/heads/main/install-ralph.sh | bash
+curl -sSL https://raw.githubusercontent.com/dheerapat/ralph-template/refs/heads/main/install-ralph.sh | bash
 ```
 
 This will:

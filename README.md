@@ -1,4 +1,4 @@
-# Ralph Wiggum Agentic Workflow Demo
+# Ralph: A template for end-to-end software development powering entirely by agentic coding
 
 This repository demonstrates an automatic Ralph workflow for autonomous software development tasks using the `opencode` CLI tool.
 

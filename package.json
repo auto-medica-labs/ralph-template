@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "ralph:once": ". plan/script/ralph-once.sh",
-    "ralph:yolo": ". plan/script/ralph-yolo.sh 10",
+    "ralph:yolo": ". plan/script/ralph-yolo.sh",
     "ralph:archive": ". plan/script/archive.sh"
   },
   "devDependencies": {

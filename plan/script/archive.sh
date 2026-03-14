@@ -57,6 +57,7 @@ mv $FILES_TO_ARCHIVE "$TARGET_DIR/"
 if [ "$KEEP_SPEC" = false ]; then
   cp plan/templates/spec.template.md plan/spec.md
 fi
+
 cp plan/templates/prd.template.json plan/prd.json
 cp plan/templates/progress.template.txt plan/progress.txt
 

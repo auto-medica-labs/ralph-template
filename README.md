@@ -97,7 +97,7 @@ Ralph will:
 After all items in `prd.json` are marked complete:
 
 ```bash
-bun run ralph:archive <optional-name>
+bun run ralph:archive -n <optional-name>
 ```
 
 This will:
